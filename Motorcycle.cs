@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ApplyingAttributes
 {
@@ -10,10 +8,10 @@ namespace ApplyingAttributes
     {
         // However, this field will not be persisted.
         [NonSerialized]
-        float weightOfCurrentPassengers;
+        public float weightOfCurrentPassengers;
         // These fields are still serializable.
-        bool hasRadioSystem;
-        bool hasHeadSet;
-        bool hasSissyBar;
+        public bool hasRadioSystem = false;
+        public bool hasHeadSet = false;
+        public bool hasSissyBar = false;
     }
 }
